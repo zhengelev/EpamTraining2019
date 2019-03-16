@@ -12,7 +12,7 @@
         android:theme="@style/AppTheme"
         tools:ignore="GoogleAppIndexingWarning">
 
-        <activity android:name="com.epam.LessonsActivity">
+        <activity android:name="com.epam.themes.hw_04_03_19.ActivityHW0403">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
