@@ -4,4 +4,6 @@
 
     <string name="theme_android_components">Android Components</string>
     <string name="theme_android_ui">Android UI</string>
+    <string name="Start_service_button">Start</string>
+    <string name="Stop_service_button">Stop</string>
 </resources>

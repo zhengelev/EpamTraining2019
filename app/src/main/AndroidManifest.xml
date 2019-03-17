@@ -34,8 +34,9 @@
         <activity android:name="com.epam.themes.androidcomponents.activities.CActivity" />
 
         <service android:name="com.epam.themes.androidcomponents.SimpleService" />
+        <service android:name="com.epam.themes.hw_04_03_19.ServiceHW"/>
 
-        <receiver android:name="com.epam.themes.androidcomponents.SimpleBroadcastReceiver">
+        <receiver android:name="com.epam.themes.hw_04_03_19.BroadcastReceiverHW">
             <intent-filter>
                 <action android:name="com.epam.CUSTOM_ACTION" />
             </intent-filter>
