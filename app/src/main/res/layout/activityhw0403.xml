@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/startService"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/Start_service_button"
+            android:textSize="26sp">
+        </Button>
+
+        <Button
+            android:id="@+id/stopService"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/Stop_service_button"
+            android:textSize="26sp">
+        </Button>
+
+        <TextView
+            android:id="@+id/broadcastMessage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:text="Message here"
+            android:textSize="26sp"/>
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/fragmentViewHW"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom">
+
+    </FrameLayout>
+
+
+</FrameLayout>
