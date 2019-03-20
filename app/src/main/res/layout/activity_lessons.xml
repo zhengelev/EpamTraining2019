@@ -22,7 +22,16 @@
             android:textSize="24sp"
             app:fontFamily="@font/indie_flower" />
 
+        <include layout="@layout/android_kotlin_lesson_item"/>
+        <include layout="@layout/android_recycler_view_lesson_item"/>
+        <include layout="@layout/android_compound_view_lesson_item"/>
+        <include layout="@layout/android_ui_lesson_item"/>
         <include layout="@layout/android_components_lesson_item" />
+        <include layout="@layout/android_clean_code_lesson_item"/>
+        <include layout="@layout/java_basics_lesson_item"/>
+        <include layout="@layout/android_studio_tools_lesson_item"/>
+        <include layout="@layout/github_lesson_item"/>
+
 
         <!--TODO add new item-->
     </LinearLayout>
