@@ -16,4 +16,20 @@
     <string name="lector_name_misha">Misha</string>
     <string name="lector_name_dima">Dima</string>
 
+    <string name="profile_name">Name Surname</string>
+    <string name="profile_status_online">Online</string>
+    <string name="edit_button">Edit</string>
+    <string name="message_text_view">Any text</string>
+    <string name="friends_number">7 friends</string>
+    <string name="home_place">Lives in jungle</string>
+    <string name="show_info">Show info</string>
+    <string name="whats_new_feed">What\s new?</string>
+    <string name="photos_text_view">Photos</string>
+    <string name="menu_search">Search</string>
+    <string name="menu_news">News</string>
+    <string name="menu_chat">Chat</string>
+    <string name="menu_notification">Notification</string>
+    <string name="options_menu_action_one">Action one</string>
+    <string name="options_menu_action_two">Action two</string>
+
 </resources>
