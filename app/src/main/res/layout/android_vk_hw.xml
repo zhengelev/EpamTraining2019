@@ -162,6 +162,14 @@
                 android:background="@android:color/transparent"
                 android:textAllCaps="false"/>
 
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="7dp"
+                android:layout_below="@id/show_info_button"
+                android:background="@color/light_gray_for_background">
+
+            </RelativeLayout>
+
             <ImageView
                 android:id="@+id/first_friend"
                 android:layout_width="25dp"
@@ -209,6 +217,15 @@
                 android:textSize="20sp"
                 android:text="@string/whats_new_feed"
                 android:textColor="@color/real_gray"/>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="7dp"
+                android:layout_below="@id/whats_new_text"
+                android:layout_marginTop="7dp"
+                android:background="@color/light_gray_for_background">
+
+            </RelativeLayout>
 
             <ImageButton
                 android:id="@+id/photo_gallery_button"
