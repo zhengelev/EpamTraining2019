@@ -12,7 +12,7 @@
         android:theme="@style/AppTheme"
         tools:ignore="GoogleAppIndexingWarning">
 
-        <activity android:name="com.epam.VKHomewok">
+        <activity android:name="com.epam.GooglePodcastHomework">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

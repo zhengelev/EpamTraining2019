@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:card_view="http://schemas.android.com/tools">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar_google_podcasts"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:id="@+id/search_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/ic_search"
+                android:background="@android:color/transparent"/>
+
+            <RelativeLayout
+                android:id="@+id/podcasts_layout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true">
+
+                <ImageView
+                    android:id="@+id/google_logo_image"
+                    android:layout_width="60dp"
+                    android:layout_height="30dp"
+                    app:srcCompat='@drawable/googlelogo_color'/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="1dp"
+                    android:layout_toEndOf="@id/google_logo_image"
+                    android:layout_marginStart="2dp"
+                    android:textSize="18sp"
+                    android:text="@string/google_podcasts"/>
+
+            </RelativeLayout>
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/ic_menu_image_gray"
+                android:background="@android:color/transparent"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="10dp"/>
+
+
+
+        </RelativeLayout>
+    </android.support.v7.widget.Toolbar>
+
+    <ImageButton
+        android:id="@+id/first_podcast_image"
+        android:layout_width="95dp"
+        android:layout_height="100dp"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="5dp"
+        android:layout_below="@id/toolbar_google_podcasts"
+        app:srcCompat="@drawable/podcast_image_1"/>
+
+    <ImageButton
+        android:id="@+id/second_podcast_image"
+        android:layout_width="95dp"
+        android:layout_height="100dp"
+        android:layout_toEndOf="@id/first_podcast_image"
+        android:layout_marginStart="5dp"
+        android:layout_below="@id/toolbar_google_podcasts"
+        app:srcCompat="@drawable/podcast_image_2"/>
+
+    <ImageButton
+        android:id="@+id/third_podcast_image"
+        android:layout_width="95dp"
+        android:layout_height="100dp"
+        android:layout_toEndOf="@id/second_podcast_image"
+        android:layout_marginStart="5dp"
+        android:layout_below="@id/toolbar_google_podcasts"
+        app:srcCompat="@drawable/podcast_image_3"/>
+
+    <ImageButton
+        android:id="@+id/forth_podcast_image"
+        android:layout_width="95dp"
+        android:layout_height="100dp"
+        android:layout_toEndOf="@id/third_podcast_image"
+        android:layout_marginStart="5dp"
+        android:layout_below="@id/toolbar_google_podcasts"
+        app:srcCompat="@drawable/podcast_image_4"/>
+
+    <ImageButton
+        android:id="@+id/fifth_podcast_image"
+        android:layout_width="95dp"
+        android:layout_height="100dp"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_below="@id/first_podcast_image"
+        app:srcCompat="@drawable/podcast_image_5"/>
+
+    <android.support.v7.widget.CardView
+        xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/card_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/fifth_podcast_image"
+        card_view:contentPadding="1dp"
+        android:layout_marginStart="7dp"
+        android:layout_marginEnd="7dp"
+        android:layout_marginTop="10dp"
+        card_view:cardCornerRadius="4dp"
+        card_view:cardBackgroundColor="@color/light_gray_for_background">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@drawable/round_layout">
+
+            <TextView
+                android:id="@+id/card_view_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:textSize="30sp"
+                android:text="@string/card_view_name"/>
+
+            <android.support.design.widget.TabLayout
+                android:id="@+id/tab_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                card_view:tabTextColor="@color/design_default_color_primary">
+
+                <android.support.design.widget.TabItem
+                    android:id="@+id/first_tab_item"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/new_episodes"/>
+
+                <android.support.design.widget.TabItem
+                    android:id="@+id/second_tab_item"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/in_progress"/>
+
+                <android.support.design.widget.TabItem
+                    android:id="@+id/third_tab_item"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/downloads"/>
+
+            </android.support.design.widget.TabLayout>
+
+            <android.support.v4.view.ViewPager
+                android:id="@+id/view_pager"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+            </android.support.v4.view.ViewPager>
+
+        </LinearLayout>
+
+
+
+    </android.support.v7.widget.CardView>
+
+
+
+
+
+
+
+
+
+
+</RelativeLayout>
