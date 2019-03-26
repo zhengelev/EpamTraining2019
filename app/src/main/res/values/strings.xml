@@ -6,4 +6,10 @@
     <string name="theme_android_ui">Android UI</string>
     <string name="theme_android_compound_view">Compound View</string>
     <string name="theme_android_collection_views">Collection Views</string>
+
+    <string name="photo_import">Import</string>
+    <string name="photo_gallery">Photo gallery</string>
+    <string name="video_gallery">Video gallery</string>
+    <string name="user_name">Gennadiy Android</string>
+    <string name="email">g.android@gmail.com</string>
 </resources>
